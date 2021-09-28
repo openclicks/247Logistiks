@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="page-title">
+        Track your shipment
+    </div>
+
+    <div class="desc">
+        This utility gives you shipment updates in just a click. An easy-to-use tool built for speed,
+            simplicity and convenience. <br/> All you need is a tracking number and a click.
+    </div>
+    <section class="content">     
+        
+
+       <input pInputText type="text" placeholder="Enter tracking number" [(ngModel)]="trackingNumber" /> <button (click)="onTrack()">Track</button>
+
+    </section>
+    <section class="peps">  
+        <div class="pep">
+            <img src="assets/img/cargo-ship.png" alt="">
+            <p>Ship Package</p>
+        </div>       
+        <div class="pep">
+            <img src="assets/img/arrow.png" alt="">
+            <p>Track Package</p>
+        </div>
+
+        <div class="pep">
+            <img src="assets/img/calendar.png" alt="">
+            <p>Get Transit Times</p>
+        </div>
+
+        
+ 
+     </section>
+</div>

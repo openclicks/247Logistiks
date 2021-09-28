@@ -1,0 +1,38 @@
+
+<div class="container">
+    <div class="page-title">
+        Login
+    </div>
+    <section class="content">
+        <form [formGroup]="form">
+            <!-- <h2>Shipping Info</h2> -->
+            <div class="info-side"> 
+                
+                    
+                <div class="p-field">
+                    <label class="c-label" for="email">Email</label>
+                    <input class="c-input" type="text" formControlName="email" pInputText />
+                </div> 
+                <div class="p-field">
+                    <label class="c-label" for="password">Password</label>
+                    <input class="c-input" type="password" formControlName="password" pInputText />
+                </div> 
+                
+                <button >Login</button>    
+            </div>
+        </form>
+    </section>
+    <!-- <section class="form">
+        <div class="page-title">
+            Login
+        </div>
+        <input type="text" placeholder="Email" /> 
+        <input type="password" placeholder="Password" /> 
+        <button >Login</button>
+
+    </section>
+
+    <section class="img">
+        <img src="assets/img/logis.jpg" alt="">
+    </section> -->
+</div>

@@ -1,0 +1,25 @@
+footer{
+    padding: 10px 200px;
+    text-align: center;
+    font-size: 12px;
+    z-index: 10000;
+    background: #ad3559;
+    padding: 5px 10px 0 0;
+    // padding-top: 5px;
+    color: #fff;
+    height: 50px;
+    position: static;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    footer{
+        margin: 10px 10px;
+        
+    }
+}
+

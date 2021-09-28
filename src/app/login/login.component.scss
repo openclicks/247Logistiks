@@ -1,0 +1,86 @@
+.container{
+    padding: 0 200px;
+    color: #757575;
+    height: 100vh;
+}  
+
+.page-title{
+    font-size: 2.5rem;
+    color: #ad3559;
+    padding: 50px;
+    // background: #FCFBF8;
+    background: #FCFBF8 url("../../assets/img/padlock.png") no-repeat fixed;
+    // background-size: cover;
+}
+
+.content{
+    display: flex;
+}
+
+form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-side .p-inputtext{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.info-side {   
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+:host ::ng-deep .p-inputtext{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.p-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-side button{
+    background: #ad3559;
+    width: 100px;
+    color: #fff;
+    // border-top-right-radius: 30px;
+    // border-bottom-right-radius: 30px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+
+:host ::ng-deep .p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #ad3559;
+}
+
+:host ::ng-deep .p-inputtext:enabled:hover {
+    border-color: #ad3559
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        padding: 0 10px;    
+    }
+
+    .info-side {           
+        width: 100%;
+    }
+
+    form{
+        padding: 50px
+    }
+
+    .page-title{
+        background-size: unset;
+    }
+}
+
+

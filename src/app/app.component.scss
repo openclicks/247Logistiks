@@ -1,0 +1,220 @@
+:host ::ng-deep .p-message{
+    margin: 0;
+    font-size: .8rem;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.peps{
+    // margin: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    // visibility: hidden;
+    // color: #757575;
+}
+
+.showPep {
+    visibility: visible;
+}
+
+// ul{
+
+// }
+
+ul li{
+    padding: 10px;
+}
+
+.side-1, .side-2{
+    width: 50%;
+}
+
+.side-2{
+  margin-left: 50px;
+}
+
+.side-1 img, .side-2 img {
+    width: 85%;
+}
+
+.title{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ad3559;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.specs{
+   margin-top: 30px;
+
+}
+
+.specs img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.content {
+    margin: 20px 200px;
+    color: #757575;
+    // visibility: hidden;
+}
+
+.imgs{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.imgs img{
+    width: 500px;
+}
+
+.stones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stone {
+    width: 300px;
+}
+
+.stone-title{
+    text-align: center;
+    color: #ad3559;
+    font-weight: 500;
+}
+
+.spec-desc{
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hi-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hi-img img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 640px) {
+    :host ::ng-deep .p-message{
+        margin: 0;
+        font-size: .7rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content {
+        margin: 20px 0;
+    }
+
+    .peps{
+
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+
+    }
+
+    // .specs{
+    //     margin: 20px 10px;
+    // }
+
+    .side-1{
+        width: 100%;
+        font-size: .8rem;
+        text-align: justify;
+        margin-bottom: 50px;
+        padding: 20px;
+        // background: #FCFBF8 url(../assets/img/plane.png) no-repeat center;
+        // background-size: cover;
+        color: #ad3559;
+        padding-bottom: 50px;
+        background-color: #FCFBF8;
+        // filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+
+        // filter: opacity(0.5) drop-shadow(0 0 0 #FCFBF8);
+    }
+
+    .side-2{
+        width: 100%;
+        font-size: .8rem;
+        // background: #FCFBF8 url(../assets/img/logistics-icons.jpg) no-repeat center;
+        // background-size: cover;
+        background-color: #FCFBF8;
+        // padding-left: 50px;
+        margin-left: 0;
+    }
+
+
+
+    .side-1 img, .side-2 img {
+        width: 100%;
+    }
+
+    // .side-1 img {
+    //     padding-right: 20px;
+    // }
+
+    .side-2 img {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .benefits{
+        padding-left: 40px;
+    }
+
+    .title{
+        font-size: 1.2rem;
+        font-weight: 500;
+        // margin-top: 10px;
+        // margin-bottom: 20px;
+    }
+
+    .stones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stone {
+        width: 400px;
+    }
+
+    .imgs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgs img{
+        width: 360px;
+    }
+
+    .hi-img img{
+        width: 100%;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .stone {
+        width: 300px;
+    }
+}

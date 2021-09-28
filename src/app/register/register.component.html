@@ -1,0 +1,48 @@
+<div class="container">
+    <section class="page-title">
+        Register
+    </section>
+
+    <section class="content">
+        <form [formGroup]="form">
+            <!-- <h2>Shipping Info</h2> -->
+            <div class="info-side"> 
+                
+                <div class="p-field">
+                    <label class="c-label" for="fullname">Fullname</label>
+                    <input class="c-input" type="text" formControlName="fullname" pInputText />
+                </div> 
+                <div class="p-field">
+                    <label class="c-label" for="phone">Phone Number</label>
+                    <input class="c-input" type="text" formControlName="phone" pInputText />
+                </div>    
+                <div class="p-field">
+                    <label class="c-label" for="email">Email</label>
+                    <input class="c-input" type="text" formControlName="email" pInputText />
+                </div>  
+                <div class="p-field">
+                    <label class="c-label" for="country">Country</label>
+                    <input class="c-input" type="text" formControlName="country" pInputText />
+                </div> 
+                <div class="p-field">
+                    <label class="c-label" for="state">State</label>
+                    <input class="c-input" type="text" formControlName="state" pInputText />
+                </div> 
+                <div class="p-field">
+                    <label class="c-label" for="city">City / Town</label>
+                    <input class="c-input" type="text" formControlName="city" pInputText />
+                </div> 
+                <div class="p-field">
+                    <label class="c-label" for="streetAddress">Street Address</label>
+                    <input class="c-input" type="text" formControlName="streetAddress" pInputText />
+                </div> 
+                <div class="p-field">
+                    <label class="c-label" for="digitalAddress">Digital Address</label>
+                    <input class="c-input" type="text" formControlName="digitalAddress" pInputText />
+                </div> 
+                <button >Register</button>    
+            </div>
+        </form>
+    </section>
+</div>
+

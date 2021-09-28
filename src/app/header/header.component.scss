@@ -1,0 +1,157 @@
+.container{
+    margin: 0 200px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    
+}
+
+.header-background{
+    background: #fff;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.btns{
+    line-height: 7;
+}
+
+.btns button{
+    border-radius: 40%;
+    // padding: 10px;
+    // height: 30px;
+}
+
+// .login{
+//     background: #fff;
+//     color: #ad3559;
+//     width: 100px;
+
+// }
+
+header img{
+    width: 150px;
+}
+
+.logo{
+    display: flex;
+    padding: 10px 0;
+}
+
+.logo-title{
+    // line-height: 5;
+    color: #ad3559;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 4.5;
+}
+
+ul{
+    list-style: none;
+    margin-top: 30px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    // line-height: 7;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ad3559;
+}
+
+.register {
+    background: #ad3559;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.login {
+    background: #fff;
+    color: #ad3559;
+    border: 1px solid #ad3559;
+    border-radius: 30px;
+}
+
+.toggle{
+    display: none;    
+    color: #ad3559;
+    margin-top: 30px;
+    line-height: 3;
+    cursor: pointer;
+}
+
+.toggle i{
+    font-size: 1.5rem;
+}
+
+.nav{
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        margin: 0;
+        padding: 0 5px;
+    }
+
+    header img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .logo-title{
+        font-size: 15px;
+    }
+
+    .toggle {
+        display: block;
+    }
+    nav{
+        display: none;
+        position: fixed;
+        top: 150px;
+        left: 0;
+        background: #ad3559;
+        width: 100%;
+    }
+
+    ul li{
+        display: block;
+        // padding: 10px;
+        // margin-left: 5px;
+        // cursor: pointer;
+        // line-height: 7;
+    }
+
+    .register {
+        background: #ad3559;
+        color: #fff;
+    }
+    
+    .login {
+        background: #ad3559;
+        color: #fff;
+        // border: 1px solid #ad3559;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+

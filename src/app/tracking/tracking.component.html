@@ -1,0 +1,107 @@
+<div class="container">
+    <div class="content" *ngIf="loaded; else Loading">
+        <div class="tracking-title">
+            Tracking Number: {{trackingNumber}}
+        </div>
+        <div *ngIf="trackingNumber && trackingNumber == '9887744552112'; else NotApplicable">
+
+            <div class="address">
+                <div class="origin">
+                    <p class="address-title">Origin</p>
+                    <p class="address-desc">Lisbon, Portugal</p>
+                </div>
+
+                <div class="destination">
+                    <p style="text-align: right;" class="address-title">Destination</p>
+                    <p class="address-desc">109 S Oak St.</p>
+                    <p class="address-desc">Berwick PA 18603</p>
+                    <p class="address-desc">Pennsylvania, United States</p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <p-timeline [value]="events1" align="alternate" styleClass="customized-timeline">
+                    <ng-template pTemplate="marker" let-event>
+                        <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
+                            <i [ngClass]="event.icon"></i>
+                        </span>
+                    </ng-template>
+                    <ng-template pTemplate="content" let-event>
+                        <p-card [header]="event.status" [subheader]="event.date">
+                            <p style="font-style: italic;">{{event.details}}</p>
+                            <!-- <button pButton label="Read more" class="p-button-text"></button> -->
+                        </p-card>
+                    </ng-template>
+                </p-timeline>
+            </div>
+
+
+            <!-- <div class="tracking-det" >
+                <div class="info-side-1">
+                    Expected delivery by
+                    <div class="day-words">THURSDAY</div>
+                    <div class="date-time">
+                        <div class="date-dd">
+
+                            <div class="day-num">30</div>
+                            <div class="month-year">
+                                <div>SEPTEMBER</div>
+                                <div>2021</div>
+                            </div>
+
+                        </div>
+
+                        <div class="time-dd">
+                            <div class="by">by</div>
+                            <div class="time">
+                                9:00pm
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="info-side-2">
+                    <div class="title">Status</div>
+                    <div class="status">
+                        Arrived at Post Office
+                    </div>
+                    <div class="status-date">
+                        September 22, 2021 at 10:00am
+                    </div>
+                    <div class="address">
+                        1122 IL, CHICAGO
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="current">
+                    <div class="percent">
+                        75%
+                    </div>
+                </div>
+            </div>
+            <div class="transit">
+                IN-TRANSIT
+            </div> -->
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<ng-template #NotApplicable>
+    Tracking Number does not exist
+</ng-template>
+
+<ng-template #Loading>
+    <div class="loader">
+        <p-progressSpinner></p-progressSpinner>
+    </div>
+
+</ng-template>
+
+<!-- <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> -->

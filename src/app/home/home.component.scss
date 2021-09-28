@@ -1,0 +1,77 @@
+.container{
+    padding: 0 200px;
+    background: rgba(0, 0, 0, 0) url("../../assets/img/logis-banner.jpg") no-repeat fixed center;
+    // background-size: cover;
+    
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    
+}
+
+.content{
+    width: 500px;
+}
+
+.content input{
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    // border-radius: 30px;
+}
+
+.content input:focus{
+    border: none;
+}
+
+.content-items{
+    display: flex;
+}
+
+.content button{
+    background: #ad3559;
+    width: 100px;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.content .desc{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+:host ::ng-deep .p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #ad3559;
+}
+
+:host ::ng-deep .p-inputtext:enabled:hover {
+    border-color: #ad3559
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        padding: 0 10px;
+        // background: rgba(0, 0, 0, 0) url("../../assets/img/logis-banner.jpg") no-repeat fixed center;
+    }
+    
+    .content{
+        width: 480px;
+    }
+
+    .content input{
+        width: 100%;
+        
+    }
+}

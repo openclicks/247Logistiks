@@ -1,0 +1,245 @@
+.container{
+    margin: 0 200px;
+    background: #FCFBF8;
+    height: 120vh;
+    
+}
+
+.content{
+    padding: 50px;
+    padding-bottom: 50px;
+    // width: 500px;
+}
+
+.date-dd{
+    padding: 0 20px 20px 0;
+    display: flex;
+}
+
+.day-words{
+    color: #b65d75;
+    font-size: 18px;
+    padding-top: 10px;
+
+}
+
+.day-num{
+    color: #ad3559;
+    font-size: 64px;
+    padding-right: 10px;
+}
+
+.date-time{
+    display: flex;
+}
+
+.month-year{
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.time-dd{
+    margin-top: 25px;
+    // font-size: 12px;
+    // color: #b65d75;
+}
+
+.by{
+    font-size: 11px;
+}
+
+.time{
+    color: #b65d75;
+}
+
+.tracking-det{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tracking-title{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #ad3559;
+}
+
+.title{
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.status{
+    padding: 10px;
+    font-size: 18px;
+    color: #b65d75;
+    
+}
+
+.status-date{
+    padding: 10px;
+}
+
+.address{
+    padding: 10px;
+}
+
+.progress{
+    background: #dc849c;
+    width: 100%;
+    display: block;
+}
+
+.current{
+    background: #ad3559;
+    width: 75%;
+    display: block;
+}
+
+.percent{
+    visibility: hidden;
+}
+
+.transit{
+    width: 80%;
+    text-align: right;
+}
+
+p{
+    color: #ABB2B9; 
+}
+
+:host ::ng-deep .p-card-title{
+    font-weight: 500;
+    color: #ad3559;
+}
+
+
+
+.custom-marker {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  ::ng-deep {
+    .p-timeline-event-content,
+    .p-timeline-event-opposite {
+      line-height: 1;
+    }
+  }
+
+  .address{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .address-desc{
+      text-align: right;
+      font-size: .7rem;
+  }
+
+  .address-title{
+      color: #ad3559;
+  }
+  
+  @media screen and (max-width: 960px) {
+    ::ng-deep {
+      .customized-timeline {
+        .p-timeline-event:nth-child(even) {
+          flex-direction: row !important;
+  
+          .p-timeline-event-content {
+            text-align: left !important;
+          }
+        }
+  
+        .p-timeline-event-opposite {
+          flex: 0;
+        }
+  
+        .p-card {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+
+
+  :host ::ng-deep .custom-spinner .p-progress-spinner-circle {
+    animation: custom-progress-spinner-dash 1.5s ease-in-out infinite, custom-progress-spinner-color 6s ease-in-out infinite;
+}
+
+@keyframes custom-progress-spinner-color {
+    100%,
+    0% {
+        stroke: #16697A;
+    }
+    40% {
+        stroke: #489FB5;
+    }
+    66% {
+        stroke: #82C0CC;
+    }
+    80%,
+    90% {
+        stroke: #FFA62B;
+    }
+}
+
+@keyframes custom-progress-spinner-dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+.loader{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        // padding: 0 5px;
+        margin: 0;
+        
+    }  
+
+    .content{
+        padding: 10px;
+        // width: 500px;
+    }
+
+    .tracking-title{
+        
+        margin-bottom: 20px;
+    }
+
+    .address-desc{
+        font-size: .7rem;
+    }
+
+    .address{
+        margin-bottom: 20px;
+    }
+}
+  
+  

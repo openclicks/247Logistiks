@@ -1,0 +1,39 @@
+<div class="container header-background"><!--- [ngClass]="{'header-background':currentRoute !== '/'}"> -->
+    <header>
+      <a href="">
+        <div class="logo">
+            <img src="assets/img/247.png" alt="">
+            <p class="logo-title">247-LOGISTIKS</p>
+          </div>
+      </a>
+
+      <div class="toggle" (click)="onToggle()"><i class="pi pi-bars"></i></div>
+
+
+      <!-- <div class="btns">
+          <button class="login" type="button">Login</button>
+          <button class="signup" type="button">Sign up for free</button>
+      </div> -->
+
+      <nav [ngClass]="{'nav': isToggled}">
+        <ul>
+            <li><a (click)="onGoToPage('track')">Track</a>  </li>
+            <!-- <li class="login" (click)="op.toggle($event)"> Login </li> -->
+            <li class="login"> <a (click)="onGoToPage('login')">Login </a> </li>
+            <li class="register"> <a (click)="onGoToPage('register')" style="color: #fff;">Register </a> </li>
+            <li class="register"> <a (click)="onGoToPage('contact-us')" style="color: #fff;">Contact Us </a> </li>
+        </ul>
+      </nav>
+
+
+    </header>
+
+    <!-- <p-overlayPanel #op [showCloseIcon]="true" [style]="{width: '450px'}">
+        <ng-template pTemplate>
+            Login
+
+        </ng-template>
+    </p-overlayPanel> -->
+
+
+</div>

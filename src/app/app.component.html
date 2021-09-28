@@ -1,0 +1,141 @@
+<!-- <p-message severity="info" text="Message Content"></p-message> -->
+<p-messages [(value)]="msgs1" [enableService]="false"></p-messages>
+<!-- <p-messages severity="info">
+  <ng-template pTemplate>
+      <img src="assets/showcase/images/primeng.svg" width="32" />
+      <div class="p-ml-2">COVID-19: We are monitoring the impact of the COVID-19 outbreak</div>
+  </ng-template>
+</p-messages> -->
+<app-header></app-header>
+<router-outlet></router-outlet>
+<div class="content" *ngIf="currentUrl === '/'"> <!--- [ngClass]="{'showPep': currentUrl === '/'}"> -->
+  <div class="peps">
+
+    <!-- <div>
+      <p-card header="247-Logistics" style="width: 360px; padding-left: 7px; margin-bottom: 20px;" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="assets/img/airplane.jpg">
+        </ng-template>
+        <p>        Our global reach, deep industry knowledge, innovative technology, and extensive transportation network have allowed us to bring the latest learning to bear on our customers’ unique challenges and desires.
+        </p>
+      </p-card>
+    </div> -->
+
+
+    <!-- <div>
+      <p-card header="Key Benefits" style="width: 360px; padding-left: 7px" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="assets/img/logistics-house.jpg">
+        </ng-template>
+        <ul class="benefits">
+          <li>Track in near real time without logging in</li>
+          <li>Get an update in one click on the homepage</li>
+          <li>Save your shipments for quick updates in near real time</li>
+          <li>See all your shipments on one clear interface</li>
+          <li>Create account to receive notifications</li>
+        </ul>
+
+      </p-card>
+    </div> -->
+
+
+
+      <div class="side-1">
+        <img alt="Card" src="assets/img/airplane.jpg">
+        <div class="title">
+          247-Logistiks
+        </div>
+        <p style="color: #757575;">
+          Our global reach, deep industry knowledge, innovative technology, and extensive transportation network have allowed us to bring the latest learning to bear on our customers’ unique challenges and desires.
+        </p>
+        <!-- We leverage our scale to create innovative and tailored solutions that help our customers optimize their supply chains to stay ahead of their competition in a market that changes every single day. -->
+
+        <!-- <img src="assets/img/plane.png" width="300px" alt="">
+        At 24-7 Logistics, we make sure your most valuable assets are transported wherever across the globe. We move gold, diamonds and other precious stones to wherever you want them to be.
+        Our 247-Logistics tool at the top of your page gives you shipment updates in just one click. A tool built for speed,
+         simplicity and convenience.
+        Save your shipments straight to our homepage, so you don't have to log in to find out where your packages are. -->
+      </div>
+
+
+
+    <div class="side-2">
+      <img alt="Card" src="assets/img/logistics-house.jpg">
+      <div class="title">
+        Key Benefits
+      </div>
+      <ul class="benefits">
+        <li>Track in near real time without logging in</li>
+        <li>Get an update in one click on the homepage</li>
+        <li>Save your shipments for quick updates in near real time</li>
+        <li>See all your shipments on one clear interface</li>
+        <li>Create account to receive notifications</li>
+      </ul>
+    </div>
+    <!-- <div class="side-1">
+      Convenient and easy track & trace solution
+      Not getting an excellent solution to track your shipments?
+      Choose 24-7 Tracker! It yields you the First Logistics shipment tracking updates from all around. You just need to enter the parcel's tracking ID and you will get the all the shipment details on a single page with just one click at anytime, anywhere and all these updates will be in the language specified by you. Try now!
+    </div>
+    <div class="side-1">
+      Improve your First-Logistics tracking experience
+  Concerned about tracking shipments? Parcel Monitor is the solution for every one of your issues. It gives you the information straight to your mailbox and you don't have to surf numerous web pages for it. For getting the tracking updates of your First Logistics shipments just join the CRM mailing feature on the Parcel Monitor website. Just give it a try now!
+    </div> -->
+  </div>
+
+  <!-- <div class="imgs">
+
+      <img src="assets/img/trucks.jpg" alt="">
+      <img src="assets/img/ship-2.jpg" alt="">
+
+  </div> -->
+  <div class="hi-img">
+    <img alt="" src="assets/img/trucks.jpg">
+  </div>
+  <div class="specs">
+
+    <div class="title">
+      Our specialties
+    </div>
+
+    <div class="spec-desc">Experts in moving and handling valuable assets</div>
+    <div class="stones">
+      <div class="stone">
+        <img src="assets/img/gold.jpg" alt="">
+        <p class="stone-title">Gold</p>
+      </div>
+
+      <div class="stone">
+        <img src="assets/img/emerald.jpg" alt="">
+        <p class="stone-title">Emerald</p>
+      </div>
+
+      <div class="stone">
+        <img src="assets/img/rubies.jpg" alt="">
+        <p class="stone-title">Rubies</p>
+      </div>
+    </div>
+
+    <div class="stones">
+      <div class="stone">
+        <img src="assets/img/heavy.jpg" alt="">
+        <p class="stone-title">Heavy-Duty Machines</p>
+      </div>
+
+      <div class="stone">
+        <img src="assets/img/vehicles.jpg" alt="">
+        <p class="stone-title">Vehicles</p>
+      </div>
+
+      <div class="stone">
+        <img src="assets/img/logs.jpg" alt="">
+        <p class="stone-title">All other kinds of logistics</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<app-footer></app-footer>
