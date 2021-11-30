@@ -46,7 +46,7 @@ ul li{
     margin-bottom: 20px;
 }
 
-.specs{
+.specs, .partner{
    margin-top: 30px;
 
 }
@@ -55,6 +55,20 @@ ul li{
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
+}
+
+.partner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.partner-img{
+  max-width: 200px;
+  object-fit: cover;
+  // border-radius: 50%;
+  align-self: center;
 }
 
 .content {
