@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -11,13 +12,14 @@ import { TrackingComponent } from './tracking/tracking.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'tracking/:id', component: TrackingComponent},  
-  {path: 'terms', component: TermsComponent}, 
-  {path: 'privacy', component: PrivacyComponent}, 
-  {path: 'login', component: LoginComponent}, 
+  {path: 'tracking/:id', component: TrackingComponent},
+  {path: 'terms', component: TermsComponent},
+  {path: 'privacy', component: PrivacyComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'track', component: TrackComponent}, 
-  {path: 'contact-us', component: ContactComponent}, 
+  {path: 'track', component: TrackComponent},
+  {path: 'contact-us', component: ContactComponent},
+  {path: 'about-us', component: AboutComponent},
   {path: '**', redirectTo: ''}
 ];
 
