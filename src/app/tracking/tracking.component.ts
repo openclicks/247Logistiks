@@ -30,7 +30,7 @@ export class TrackingComponent implements OnInit {
         {status: 'Ordered', date: '19/11/2021 10:30', icon: PrimeIcons.SHOPPING_CART, color: '#ad3559', image: 'game-controller.jpg', details: 'Payment confirmed. Package Ordered'},
         {status: 'Processing', date: '19/11/2021 11:00', icon: PrimeIcons.COG, color: '#ad3559', details: 'Order confirmed. Preparing to ship package'},
         {status: 'Shipped', date: '21/11/2021 16:15', icon: PrimeIcons.TABLE, color: '#ad3559', details: 'Package has left origin'},
-        {status: 'In-Transit', date: '24/11/2021 10:00', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Arriving on December 15, 2021'},
+        {status: 'In-Transit', date: '24/11/2021 10:00', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Arriving on December 23, 2021'},
         {status: 'In-Transit', date: '07/12/2021 18:00', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Package has arrived at Port of St Pierre, St Pierre and Miquelon'},
         {status: 'In-Transit', date: '10/12/2021 23:20', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Package has arrived at Port of Quebec, Quebec, Canada'}
 
