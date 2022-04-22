@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  originCity: 'London',
+  originCountry: 'UK',
+  destCityOrState: 'Camdenton MO 65020',
+  destCountry: 'USA',
+  destAddress: '159 Bumperhill RD'
 };
 
 /*

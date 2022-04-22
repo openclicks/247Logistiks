@@ -24,7 +24,7 @@ export class AppComponent {
 
     this.ds.getUrl()
       .subscribe(url => {
-        console.log('appp', url);
+        // console.log('appp', url);
         this.currentUrl = url;
       })
 

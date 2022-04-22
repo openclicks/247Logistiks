@@ -20,12 +20,12 @@ export class HeaderComponent implements OnInit, OnDestroy {
       .subscribe(
         (event: NavigationEvent) => {
           if(event instanceof NavigationStart) {
-            console.log(event.url);
+            // console.log(event.url);
             this.currentRoute = event.url;
             this.ds.setUrl(this.currentRoute);
           }
         })
-    
+
   }
 
   onToggle(){
