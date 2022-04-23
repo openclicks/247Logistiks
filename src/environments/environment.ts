@@ -6,9 +6,9 @@ export const environment = {
   production: false,
   originCity: 'London',
   originCountry: 'UK',
-  destCityOrState: 'Camdenton MO 65020',
+  destCityOrState: 'Connecticut 06516',
   destCountry: 'USA',
-  destAddress: '159 Bumperhill RD'
+  destAddress: '17 South Forest Circle, West Haven'
 };
 
 /*
