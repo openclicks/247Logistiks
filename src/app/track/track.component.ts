@@ -15,8 +15,8 @@ export class TrackComponent implements OnInit {
   }
 
   onTrack(){
-    console.log('num', this.trackingNumber);
-    
+    // console.log('num', this.trackingNumber);
+
     if(this.trackingNumber){
       let id = this.trackingNumber;
       this.router.navigate(['/tracking', id])
@@ -24,8 +24,8 @@ export class TrackComponent implements OnInit {
       alert('Please provide a tracking number')
     }
 
-    
-    
+
+
   }
 
 }
