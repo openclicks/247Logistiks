@@ -37,7 +37,8 @@ export class TrackingComponent implements OnInit {
         {status: 'Ordered', date: '22/04/2022 10:30', icon: PrimeIcons.SHOPPING_CART, color: '#ad3559', image: 'game-controller.jpg', details: 'Package Ordered. Payment confirmed. '},
         {status: 'Processing', date: '22/04/2022 11:00', icon: PrimeIcons.COG, color: '#ad3559', details: 'Order confirmed. Preparing to ship package'},
         {status: 'Shipped', date: '23/04/2022 13:15', icon: PrimeIcons.TABLE, color: '#ad3559', details: 'Package has left origin'},
-        {status: 'In-Transit', date: '23/04/2022 18:00', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Expected Arrival Date - May 22, 2022'}
+        {status: 'In-Transit', date: '23/04/2022 18:00', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Expected Arrival Date - May 22, 2022'},
+        {status: 'In-Transit: Stuck In Customs', date: '23/05/2022 15:00', icon: PrimeIcons.EXCLAMATION_TRIANGLE, color: '#ad3559', details: 'Package is held up for further checks.'}
         // {status: 'In-Transit', date: '07/12/2021 18:00', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Package has arrived at Port of St Pierre, St Pierre and Miquelon'},
         // {status: 'In-Transit', date: '10/12/2021 23:20', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Package has arrived at Port of Quebec, Quebec, Canada'},
         // {status: 'In-Transit', date: '21/12/2021 11:40', icon: PrimeIcons.SEND, color: '#ad3559', details: 'Package has arrived at Port Miami, Florida, US'}
